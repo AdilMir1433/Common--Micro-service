@@ -1,10 +1,7 @@
 
-# User Service
+# Common Microservice
 
-A micro service to maintain and manipulate the user data. Contains Roles of an ADMIN, STUDENT and TEACHER. 
-
-Communicates with a database to maintain Data. Communicates with other microservices.
-
+A micro service to have all the common files so that All the microservices can be use them.
 
 
 
@@ -18,7 +15,7 @@ Communicates with a database to maintain Data. Communicates with other microserv
 Clone the project
 
 ```bash
-  git clone https://github.com/AdilMir1433/User-Service
+  git clone https://github.com/AdilMir1433/Common--Micro-service
 ```
 
 Go to the project directory
@@ -39,11 +36,16 @@ Start the server
   Start by Clicking Play Button
 ```
 
+##Depencency 
+
+        <dependency>
+            <groupId>com.common</groupId>
+            <artifactId>common-library</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
 
 ## Features
 
-- Multiple roles (ADMIN, STUDENT , TEACHER)
-- Only admin creates Accounts
-- Admin Approves Quizzes
-- Inter Communication
+- Common File
+
 
