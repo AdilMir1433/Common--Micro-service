@@ -1,11 +1,9 @@
 package com.common;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.Time;
@@ -16,14 +14,27 @@ import java.util.Date;
 @Getter
 @Setter
 public class Exam {
+    @JsonProperty("id")
+    Long id;
+
     @JsonProperty("examTitle")
     String examTitle;
+
     @JsonProperty("startTime")
-    Time startTime;
+    @DateTimeFormat(pattern = "HH:mm") // Specify the date format you are using for startTime and endTime
+    @Temporal(TemporalType.TIME)
+    Date startTime;
+
     @JsonProperty("endTime")
-    Time endTime;
+    @DateTimeFormat(pattern = "HH:mm") // Specify the date format you are using for startTime and endTime
+    @Temporal(TemporalType.TIME)
+    Date endTime;
+
     @JsonProperty("startDate")
+    @DateTimeFormat(pattern = "yyyy-MM-dd") // Specify the date format you are using for startDate
+    @Temporal(TemporalType.DATE)
     Date startDate;
+
     @JsonProperty("subjectID")
     Long subjectID;
     @JsonProperty("teacherID")
