@@ -26,17 +26,17 @@ public class ExamDTO {
     @JsonProperty("startTime")
     @DateTimeFormat(pattern = "HH:mm") // Specify the date format you are using for startTime and endTime
     @Temporal(TemporalType.TIME)
-    Date startTime;
+    String startTime;
 
     @JsonProperty("endTime")
     @DateTimeFormat(pattern = "HH:mm") // Specify the date format you are using for startTime and endTime
     @Temporal(TemporalType.TIME)
-    Date endTime;
+    String endTime;
 
     @JsonProperty("startDate")
     @DateTimeFormat(pattern = "yyyy-MM-dd") // Specify the date format you are using for startDate
     @Temporal(TemporalType.DATE)
-    Date startDate;
+    String startDate;
 
     @JsonProperty("subjectID")
     Long subjectID;

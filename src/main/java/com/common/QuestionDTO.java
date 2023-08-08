@@ -11,6 +11,9 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class QuestionDTO {
+
+    @JsonProperty("id")
+    private Long id;
     @JsonProperty("question")
     private String question;
     @JsonProperty("option1")
@@ -27,4 +30,6 @@ public class QuestionDTO {
     private Long examID;
     @JsonProperty("questionType")
     private QuestionType questionType;
+    @JsonProperty("questionScore")
+    private int questionScore;
 }
