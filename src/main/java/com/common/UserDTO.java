@@ -32,4 +32,7 @@ public class UserDTO {
 
     @JsonProperty("displayPicture")
     private byte[] displayPicture;
+
+    @JsonProperty("adminID")
+    private Long adminID;
 }
