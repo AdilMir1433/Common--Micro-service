@@ -1,6 +1,5 @@
-package com.common;
+package com.common.UserDTOs;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,13 +9,8 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class PersonDTO {
-
-    @JsonProperty("Id")
-    Long Id;
-    @JsonProperty("name")
+public class StudentDTO {
     String name;
-    @JsonProperty("email")
+    String image;
     String email;
-
 }

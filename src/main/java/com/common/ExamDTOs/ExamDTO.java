@@ -1,4 +1,4 @@
-package com.common;
+package com.common.ExamDTOs;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.Temporal;

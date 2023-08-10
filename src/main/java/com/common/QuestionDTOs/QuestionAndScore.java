@@ -1,4 +1,4 @@
-package com.common;
+package com.common.QuestionDTOs;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;

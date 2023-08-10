@@ -1,5 +1,6 @@
-package com.common;
+package com.common.ExamDTOs;
 
+import com.common.QuestionDTOs.QuestionAndScore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

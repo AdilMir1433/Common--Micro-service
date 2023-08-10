@@ -1,4 +1,4 @@
-package com.common;
+package com.common.QuestionDTOs;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
@@ -22,8 +22,6 @@ public class QuestionDTO {
     private String option2;
     @JsonProperty("option3")
     private String option3;
-    @JsonProperty("option4")
-    private String option4;
     @JsonProperty("answer")
     private String answer;
     @JsonProperty("examID")

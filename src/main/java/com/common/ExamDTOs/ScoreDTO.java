@@ -1,4 +1,4 @@
-package com.common;
+package com.common.ExamDTOs;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

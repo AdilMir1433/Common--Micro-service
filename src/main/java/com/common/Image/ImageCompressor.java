@@ -1,4 +1,4 @@
-package com.common;
+package com.common.Image;
 
 import net.coobird.thumbnailator.Thumbnails;
 
